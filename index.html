@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<title>Website</title>
+</head>
+<body>
+	<!-- Navigation bar -->
+	<nav>
+		<div class="containerx5">
+		<div class="logo">
+			<h4>INEFFABLE</h4>
+		</div>
+		<div class="dropdown" role="group">
+ 			<button id="btnGroupDrop1" type="button" data-toggle="dropdown" area-haspopup="true" aria-expanded="false" class="but" key="button">Button</button>
+ 			<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+ 				<a class="dropdown-item" href="#" id="en" key="english">EN</a>
+ 				<a class="dropdown-item" href="#" id="lt" key="lithuanian">LT</a>
+ 			</div>
+ 	 	</div>
+ 	 	</div>
+		<ul class="nav-links">
+			<li>
+				<a class="nav" key="home" href="index.html">Home</a>
+			</li>
+			<li>
+				<a class="nav" key="equipment" href="equipment.html">Equipment</a>
+			</li>
+			<li>
+				<a class="nav" key="gallery" href="gallery.html">Gallery</a>
+			</li>
+			<li>
+				<a class="nav" key="contact" href="contact-us.html">Contact Us</a>
+			</li>
+		</ul>
+		<!-- Meniu button -->
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</nav>
+ <!-- carousel -->
+ 	<div class="landing-page">
+ 		<img src="home/landing-page.jpg">
+ 	</div>
+ 		<div class="carousel-container">
+ 			<img src="gallery/prev.png" id="prevBtn">
+ 			<img src="gallery/next.png" id="nextBtn">
+ 			<div class="carousel-slide">
+ 				<a href="contactus.html"><img src="home/contactus.jpg" id="lastClone" alt=""></a>
+ 				<a href="equipment.html"><img src="home/photogear.jpg" alt=""></a>
+ 				<a href="gallery.html"><img src="home/ourwork.jpg" alt=""></a>
+ 				<a href="contact-us.html"><img src="home/contactus.jpg" alt=""></a>
+ 				<a href="index.html"><img src="home/photogear.jpg" id="firstClone" alt=""></a>
+ 			</div>
+ 		</div>
+ 	<style>
+
+ 	.carousel-container{
+		width:58%;
+		margin-top:50px;
+		margin-bottom:50px;
+		margin-left:350px;
+		border:5px solid black;
+		overflow:hidden;
+		position:relative;
+	}
+	.carousel-slide{
+		display:flex;
+		width:100%;
+		height:500px;
+	}
+	#prevBtn{
+		position:absolute;
+		top:50%;
+		z-index:10;
+		left:5%;
+		font-size:30px;
+		color:white;
+		cursor:pointer;
+	}	
+	#nextBtn{
+		position:absolute;
+		top:50%;
+		z-index:10;
+		right:5%;
+		font-size:30px;
+		color:white;
+		cursor:pointer;
+	}
+
+ 	</style>
+	<!-- Footer -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<img src="ineffable.png" alt="" class="logo2">
+				<div class="social-media">
+					<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://twitter.com/explore"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+					<a href="https://github.com/tonystarkas"><i class="fab fa-github"></i></a>
+				</div>
+				<p class="rights-text" key="rights">@ 2020 Created by Daumantas Margelis</p>
+			</div>
+			<div class="right-col">
+				<h1 class="a" key="right-col">Our Newsletter</h1>
+			<div class="border"></div>
+			<p class="e" key="border">Enter your Email to get news on the latest equipment.</p>
+			<form action="" class="newsletter-form">
+				<input type="email" class="txtb" data-translate="email_placeholder" key="email_holder" aria-describedby="emailHelp" placeholder="Enter Your Email" required>
+				<input type="submit" class="btn" value="Submit">
+			</form>	
+			</div>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="javascript/languages.js"></script>
+	<script src="javascript/app.js"></script>
+	<script src="javascript/carousel.js"></script>
+</body>
+</html>

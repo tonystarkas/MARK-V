@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+      <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+      <script src="javascript/scripts.js"></script>
+      <title>Website</title>
+   </head>
+   <body>
+      <!-- Navigation bar -->
+      <nav>
+         <div class="containerx5">
+		<div class="logo">
+			<a id="k" href="index.html"><h4>INEFFABLE</h4></a>
+		</div>
+		<div class="dropdown" role="group">
+ 			<button id="btnGroupDrop1" type="button" data-toggle="dropdown" area-haspopup="true" aria-expanded="false" class="but" key="button">Button</button>
+ 			<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+ 				<a class="dropdown-item" href="#" id="en" key="english">EN</a>
+ 				<a class="dropdown-item" href="#" id="lt" key="lithuanian">LT</a>
+ 			</div>
+ 	 	</div>
+ 	 	</div>
+         <ul class="nav-links">
+            <li>
+               <a class="nav" key="home" href="index.html">Home</a>
+            </li>
+            <li>
+               <a class="nav" key="equipment" href="equipment.html">Equipment</a>
+            </li>
+            <li>
+               <a class="nav" key="gallery" href="gallery.html">Gallery</a>
+            </li>
+            <li>
+               <a class="nav" key="contact" href="contact-us.html">Contact Us</a>
+            </li>
+         </ul>
+         <style>
+         	#k{
+         		color:white;
+         	}
+			#k a:hover, a:visited, a:link, a:active{
+    			text-decoration: none;
+			}
+         </style>
+         <!-- Meniu button -->
+         <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+         </div>
+      </nav>
+      <!-- carousel -->
+      <div class="page-content">
+         <div class="wrapper">
+            <h2 class="nav" key="contact">Contact Us</h2>
+            <div id="error_message"></div>
+            <form id="myform" onsubmit="return validation()">
+               <div class="input_field">
+                  <input type="text" data-translate="name_placeholder" key="name_holder" placeholder="Name" id="name">
+               </div>
+               <div class="input_field">
+                  <input type="text" placeholder="Subject" id="subject" data-translate="subject_placeholder" key="subject_holder">
+               </div>
+               <div class="input_field">
+                  <input type="text" placeholder="Phone" id="phone" data-translate="phone_placeholder" key="phone_holder">
+               </div>
+               <div class="input_field">
+                  <input type="text" placeholder="Email" id="email" data-translate="email_placeholder" key="emaill_holder">
+               </div>
+               <div class="input_field">
+                  <textarea id="message" placeholder="Message" data-translate="message_placeholder" key="message_holder"></textarea>
+               </div>
+               <div class="buttton">
+                  <input type="submit">
+               </div>
+            </form>
+         </div>
+      </div>
+      <style>
+         .wrapper{
+         position:absolute;
+         top:55%;
+         left:50%;
+         transform:translate(-50%,-50%);
+         max-width:400px;
+         width:100%;
+         background-color:#a8889b;
+         padding:25px;
+         border-radius:5px;
+         box-shadow:4px 4px 4px 4px rgba(0,0,0,0.2);
+         }
+         .wrapper h2{
+         text-align:center;
+         letter-spacing:3px;
+         font-size:40px;
+         color:black;
+         outline-width:1px;
+         outline-color:black;
+         }
+         .wrapper .input_field{
+         margin-bottom:4px;
+         }
+         .wrapper .input_field input[type="text"],
+         .wrapper textarea{
+         width:350px;
+         max-width:400px;
+         border:1px solid;
+         padding:5px;
+         }
+         .wrapper textarea{
+         height:60px;
+         resize:none;
+         }
+         .wrapper .buttton input[type="submit"]{
+         border:1px solid;
+         padding:10px;
+         width:100%;
+         text-transform:uppercase;
+         letter-spacing:5px;
+         font-weight:bold;
+         border-radius:25px;
+         cursor:pointer;
+         }
+         .wrapper #error_message{
+         margin-bottom:20px;
+         padding:0px;
+         background:#fe8b8e;
+         text-align:center;
+         font-size:14px;
+         transition:all 0.5s ease;
+         }
+      </style>
+      <!-- Footer -->
+      <footer>
+         <div class="footer-container">
+            <div class="left-col">
+               <img src="ineffable.png" alt="" class="logo2">
+               <div class="social-media">
+                  <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/explore"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                  <a href="https://github.com/tonystarkas"><i class="fab fa-github"></i></a>
+               </div>
+             <p class="rights-text" key="rights">@ 2020 Created by Daumantas Margelis</p>
+            </div>
+            <div class="right-col">
+               <h1 class="a" key="right-col">Our Newsletter</h1>
+               <div class="border"></div>
+               <p class="e" key="border">Enter your Email to get news on the latest equipment.</p>
+               <form action="" class="newsletter-form">
+                  <input type="email" class="txtb" data-translate="email_placeholder" key="email_holder" aria-describedby="emailHelp" placeholder="Enter Your Email" required>
+                  <input type="submit" class="btn" value="Submit">
+               </form>
+            </div>
+         </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	  <script src="javascript/languages.js"></script>
+      <script src="javascript/app.js"></script>
+   </body>
+</html>

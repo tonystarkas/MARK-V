@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<link rel="stylesheet"  href="">
+	<title>Website</title>
+</head>
+<body>
+	<!-- Navigation bar -->
+	<nav>
+		<div class="containerx5">
+		<div class="logo">
+			<a id="k" href="index.html"><h4>INEFFABLE</h4></a>
+		</div>
+		<div class="dropdown" role="group">
+ 			<button id="btnGroupDrop1" type="button" data-toggle="dropdown" area-haspopup="true" aria-expanded="false" class="but" key="button">Button</button>
+ 			<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+ 				<a class="dropdown-item" href="#" id="en" key="english">EN</a>
+ 				<a class="dropdown-item" href="#" id="lt" key="lithuanian">LT</a>
+ 			</div>
+ 	 	</div>
+ 	 	</div>
+		<ul class="nav-links">
+			<li>
+				<a class="nav" key="home" href="index.html">Home</a>
+			</li>
+			<li>
+				<a class="nav" key="equipment" href="equipment.html">Equipment</a>
+			</li>
+			<li>
+				<a class="nav" key="gallery" href="gallery.html">Gallery</a>
+			</li>
+			<li>
+				<a class="nav" key="contact" href="contact-us.html">Contact Us</a>
+			</li>
+		</ul>
+		  <style>
+         	#k{
+         		color:white;
+         	}
+			#k a:hover, a:visited, a:link, a:active{
+    			text-decoration: none;
+			}
+         </style>
+		<!-- Meniu button -->
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</nav>
+	<!-- Box type list -->
+ 	<div class="page-content">
+ 		<div class="container">	
+ 			<h1 class="nav" key="equipment">Equipment</h1>
+ 			<ul>
+ 				<a href="cameras.html">
+ 				<li><div class="title" key="a">Cameras</div><img src="equipment/photocamera.png"></li>
+ 				</a>
+ 				<li><div class="title" key="b">Memory Cards</div><img src="equipment/memorycard.jpg"></li>
+ 				<li><div class="title" key="c">Microphones</div><img src="equipment/microphones.jpg"></li>
+ 				<li><div class="title" key="d">Flashes</div><img src="equipment/flashlight.jpg"></li>
+ 				<li><div class="title" key="e">Stabilizers</div><img src="equipment/stabilizer.jpg"></li>
+ 				<li><div class="title" id="other_equipment" key="f">Other Equipment</div><img src="equipment/miscellaneous.jpg"></li>
+ 			</ul>
+ 		</div>
+ 	</div>
+	<!-- Footer -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<img src="ineffable.png" alt="" class="logo2">
+				<div class="social-media">
+					<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://twitter.com/explore"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+					<a href="https://github.com/tonystarkas"><i class="fab fa-github"></i></a>
+				</div>
+				<p class="rights-text" key="rights">@ 2020 Created by Daumantas Margelis</p>
+			</div>
+			<div class="right-col">
+				<h1 class="a" key="right-col">Our Newsletter</h1>
+			<div class="border"></div>
+			<p class="e" key="border">Enter your Email to get news on the latest equipment.</p>
+			<form action="" class="newsletter-form">
+				<input type="email" class="txtb" data-translate="email_placeholder" key="email_holder" aria-describedby="emailHelp" placeholder="Enter Your Email" required>
+				<input type="submit" class="btn" value="Submit">
+			</form>	
+			</div>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="javascript/languages.js"></script>
+	<script src="javascript/app.js"></script>
+</body>
+</html>
